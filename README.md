@@ -1,7 +1,7 @@
 # kcptunmanager
 A kcptun manager. Write in electron.
 
-1. Download tcptun client form offical site
+1. Download tcptun client from offical site
 2. Choose path/to/client_linux_amd64
 3. fill the proper args, eg:
 
