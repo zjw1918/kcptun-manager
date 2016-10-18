@@ -1,0 +1,19 @@
+{
+  "name": "kcptun-manager",
+  "version": "1.0.0",
+  "description": "A kcptun manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/zjw1918/kcptun-manager",
+  "keywords": [
+    "Electron",
+    "kcptun"
+  ],
+  "author": "zjw1918",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>kcptun简易管理端</title>
+  </head>
+  <body>
+    <h1>kcptun简易管理端</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <!--We are using node <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.-->
+
+    <p>
+      <!--<button id="new-window">弹出一个新窗口</button>
+      <button id="get-avatar">随机联网获取一位女性头像</button>
+      <button id="exec-cmd">执行一条系统命令(ping baidu)</button>-->
+      <button id="exec-file">执行选中的文件</button>
+      <br>最近一次client路径：<span id="filePath"></span>
+    </p>
+    <p>
+      <h3>参数设置：</h3>
+      <input type="file" id="rawFile">
+      <!--<form name="args">
+        -r:       <input type="text" name="r">
+        -l:       <input type="text" name="l"> <br>
+        -mode:    <input type="text" name="mode">
+        --key:    <input type="text" name="key"> <br>
+        --crypt:  <input type="text" name="crypt">
+        <button id="save-args">保存参数</button>
+      </form>-->
+      <!--<input type="text" name="arguments" id="arguments">-->
+      <form id="args">
+          <table>
+            <col width=80>
+            <col width=200>
+            <tr><td>-r:</td><td><input type="text" name="r"></td></tr>
+            <tr><td>-l:</td><td><input type="text" name="l"></td></tr>
+            <tr><td>-mode:</td><td><input type="text" name="mode"></td></tr>
+            <tr><td>--key:</td><td><input type="text" name="key"></td></tr>
+            <tr><td>--crypt:</td><td><input type="text" name="crypt"></td></tr>
+          </table>
+      </form>
+      <!--<button id="save-args">保存参数</button>-->
+      
+    </p>
+
+    <p>log:</p>
+    <p>
+      <span id="log"></span>
+    </p>
+
+    <img id="avatar" src="" alt="">
+
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
